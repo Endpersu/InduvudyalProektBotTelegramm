@@ -17,8 +17,8 @@ async def start_cmd(message: types.Message):
 
 @dp.message()
 async def convers(message: types.Message):
-    if message.text == "Продай слона":
-        await message.answer("Купи")
+    if message.text.lower() == "утро":
+        await message.answer("Пьем кофе")
     
 
 async def main():
