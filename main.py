@@ -15,11 +15,12 @@ dp = Dispatcher()
 async def start_cmd(message: types.Message):
     await message.answer("Это была команда старт")
 
+
 @dp.message()
 async def convers(message: types.Message):
     if message.text.lower() == "утро":
         await message.answer("Пьем кофе")
-    
+
 
 async def main():
     await dp.start_polling(bot)
