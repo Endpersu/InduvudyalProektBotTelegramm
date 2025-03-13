@@ -36,7 +36,6 @@ async def main():
         kb = [
             [types.KeyboardButton(text="Что ты умеешь?")],
             [types.KeyboardButton(text="Найти подработку")]
-            [types.KeyboardButton(text='')]
         ]
         keyboard = types.ReplyKeyboardMarkup(keyboard=kb)
         await message.answer("Здравствуйте! Какой тип подработки вас\
