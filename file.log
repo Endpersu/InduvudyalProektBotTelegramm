@@ -22,3 +22,89 @@
 2025-03-13 at 13:30:45 | INFO | Бот создан
 2025-03-13 at 13:30:45 | INFO | Диспетчер создан
 2025-03-13 at 13:30:53 | INFO | Бот вернул пользователю сообщение С пюрешкой
+2025-03-14 at 11:22:39 | INFO | Бот создан
+2025-03-14 at 11:22:39 | INFO | Диспетчер создан
+2025-03-14 at 11:22:40 | INFO | Бот запущен
+2025-03-14 at 11:22:40 | INFO | Бот запущен
+2025-03-14 at 11:22:40 | INFO | Бот запущен
+2025-03-14 at 11:22:40 | INFO | Бот запущен
+2025-03-14 at 11:22:40 | INFO | Бот запущен
+2025-03-14 at 11:22:40 | INFO | Бот запущен
+2025-03-14 at 11:22:40 | INFO | Бот запущен
+2025-03-14 at 11:22:40 | INFO | Бот запущен
+2025-03-14 at 11:53:53 | INFO | Бот создан
+2025-03-14 at 11:53:53 | INFO | Диспетчер создан
+2025-03-14 at 11:53:53 | ERROR | Ошибка при отправке сообщения 2 validation errors for SendMessage
+chat_id.int
+  Input should be a valid integer [type=int_type, input_value=None, input_type=NoneType]
+    For further information visit https://errors.pydantic.dev/2.10/v/int_type
+chat_id.str
+  Input should be a valid string [type=string_type, input_value=None, input_type=NoneType]
+    For further information visit https://errors.pydantic.dev/2.10/v/string_type
+2025-03-14 at 11:54:23 | ERROR | Ошибка при отправке сообщения 2 validation errors for SendMessage
+chat_id.int
+  Input should be a valid integer [type=int_type, input_value=None, input_type=NoneType]
+    For further information visit https://errors.pydantic.dev/2.10/v/int_type
+chat_id.str
+  Input should be a valid string [type=string_type, input_value=None, input_type=NoneType]
+    For further information visit https://errors.pydantic.dev/2.10/v/string_type
+2025-03-14 at 11:54:34 | INFO | Бот запущен
+2025-03-14 at 11:54:53 | ERROR | Ошибка при отправке сообщения 2 validation errors for SendMessage
+chat_id.int
+  Input should be a valid integer [type=int_type, input_value=None, input_type=NoneType]
+    For further information visit https://errors.pydantic.dev/2.10/v/int_type
+chat_id.str
+  Input should be a valid string [type=string_type, input_value=None, input_type=NoneType]
+    For further information visit https://errors.pydantic.dev/2.10/v/string_type
+2025-03-14 at 11:55:24 | ERROR | Ошибка при отправке сообщения 2 validation errors for SendMessage
+chat_id.int
+  Input should be a valid integer [type=int_type, input_value=None, input_type=NoneType]
+    For further information visit https://errors.pydantic.dev/2.10/v/int_type
+chat_id.str
+  Input should be a valid string [type=string_type, input_value=None, input_type=NoneType]
+    For further information visit https://errors.pydantic.dev/2.10/v/string_type
+2025-03-14 at 11:55:29 | INFO | Бот остановлен
+2025-03-14 at 13:37:00 | INFO | Бот создан
+2025-03-14 at 13:37:00 | INFO | Диспетчер создан
+2025-03-14 at 13:37:01 | ERROR | Ошибка при отправке сообщения 2 validation errors for SendMessage
+chat_id.int
+  Input should be a valid integer [type=int_type, input_value=None, input_type=NoneType]
+    For further information visit https://errors.pydantic.dev/2.10/v/int_type
+chat_id.str
+  Input should be a valid string [type=string_type, input_value=None, input_type=NoneType]
+    For further information visit https://errors.pydantic.dev/2.10/v/string_type
+2025-03-14 at 13:37:31 | ERROR | Ошибка при отправке сообщения 2 validation errors for SendMessage
+chat_id.int
+  Input should be a valid integer [type=int_type, input_value=None, input_type=NoneType]
+    For further information visit https://errors.pydantic.dev/2.10/v/int_type
+chat_id.str
+  Input should be a valid string [type=string_type, input_value=None, input_type=NoneType]
+    For further information visit https://errors.pydantic.dev/2.10/v/string_type
+2025-03-14 at 13:38:01 | ERROR | Ошибка при отправке сообщения 2 validation errors for SendMessage
+chat_id.int
+  Input should be a valid integer [type=int_type, input_value=None, input_type=NoneType]
+    For further information visit https://errors.pydantic.dev/2.10/v/int_type
+chat_id.str
+  Input should be a valid string [type=string_type, input_value=None, input_type=NoneType]
+    For further information visit https://errors.pydantic.dev/2.10/v/string_type
+2025-03-14 at 13:38:31 | ERROR | Ошибка при отправке сообщения 2 validation errors for SendMessage
+chat_id.int
+  Input should be a valid integer [type=int_type, input_value=None, input_type=NoneType]
+    For further information visit https://errors.pydantic.dev/2.10/v/int_type
+chat_id.str
+  Input should be a valid string [type=string_type, input_value=None, input_type=NoneType]
+    For further information visit https://errors.pydantic.dev/2.10/v/string_type
+2025-03-14 at 13:38:59 | INFO | Бот остановлен
+2025-03-14 at 13:39:04 | INFO | Бот создан
+2025-03-14 at 13:39:04 | INFO | Диспетчер создан
+2025-03-14 at 13:39:05 | INFO | Опублекован анекдот: Объявление. Продам шкурки зайцев-беляков.Заяц-красноармеец.
+2025-03-14 at 13:39:35 | INFO | Опублекован анекдот: Таможенник Петров - один из немногих людей, кто понимает поговорку"молчание – золото" буквально...
+2025-03-14 at 13:40:05 | INFO | Опублекован анекдот: Чиновничья судьба полна неожиданностей — ещё вчера ты жил припеваючи и воровал, а уже сегодня вновь живешь припеваючи и воруешь.
+2025-03-14 at 13:40:35 | INFO | Опублекован анекдот: Одиночество - это когда освежитель воздуха в туалете теряет всякий смысл.
+2025-03-14 at 13:41:06 | INFO | Опублекован анекдот: Разговаривают две мамаши:- Все столы во дворе доминошники позанимали! Детям в карты поиграть негде!
+2025-03-14 at 13:41:36 | INFO | Опублекован анекдот: Я так не высыпаюсь на этой работе, хотя, вроде, ложусь рано.
+2025-03-14 at 13:42:06 | INFO | Опублекован анекдот: независимая от реальности газета...
+2025-03-14 at 13:42:36 | INFO | Опублекован анекдот: Сзади лязгнуло, и натруженно заревело. С клекотом пробуксовали траки поасфальту.- Танки!!!! - крикнули в толпе, - Ну наконец-то!!!!!- Урааааа! БРАТУШКИИИИИИИИИИИИ!!!! - митинг подался вперед и в стороны,  и на броню, как в Праге 45-го, полетели букеты цветов. Люди стояли  коридором, пропуская колонну, улыбались и махали термосами с чаем и  пакетами с бутербродами. Злые, чумазые, продрогшие, не выспавшиеся и  голодные танкисты ошалело крутили головами.- Сыночек, поешь горяченького, - тетка с курицей-гриль метнулась к люку  мехвода.Наводчик, высунувшись из башни, придирчиво выбирал между протянутымипачками Мальборо, Кента и Честерфилда. Командир, прихлебывая чаем слимоном огромный бутер с ветчиной и сыром, старался запомнить телефоныдевушек, которые ему нашептывали в оба уха нежные голоса.Стерев крошки с губ рукавом комбеза, лихо крутанув барабаном укладкибоезапаса автомата заряжания и мужественно клацнув затвором, комвзводаспросил демострантов: - Куда стрелять?Все инстинктивно посмотрели на Кремль.
+2025-03-14 at 13:43:07 | INFO | Опублекован анекдот: Крошка-сын к отцу пришел и спросила кроха: - Батяня, а как это Роснано столько лет с блеском проходило проверки Счетной палаты?- Слушай, без тебя тошно...
+2025-03-14 at 13:43:37 | INFO | Опублекован анекдот: Уважаемая Дарья Донцова!Учитывая Вашу безмерную ценность для русской культуры, заклинаю Вас - берегите себя, не работайте на износ. Пишите как можно меньше. Лучше совсем не пишите! Поверьте - в этом случае Ваша ценность для русской литературы только возрастет!
+2025-03-14 at 13:43:51 | INFO | Бот остановлен

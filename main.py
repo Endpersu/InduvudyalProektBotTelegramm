@@ -1,53 +1,64 @@
 import os
 import asyncio
-from loguru import logger
 from dotenv import load_dotenv, find_dotenv
+from loguru import logger
 from aiogram import Bot, Dispatcher, types
 from aiogram.filters import Command
+import requests
+from bs4 import BeautifulSoup
+from random import choice
 
 
 load_dotenv(find_dotenv())
 TOKEN = os.getenv("TOKEN")
+CHANNEL_ID = os.getenv("CHANNEL_ID")
 
 
 async def main():
     logger.add("file.log",
                format="{time:YYYY-MM-DD at HH:mm:ss} | {level} | {message}",
-               rotation="3 days", backtrace=True, diagnose=True)
+               rotation="3 days",
+               backtrace=True,
+               diagnose=True)
 
-    bot = Bot(TOKEN)
+    bot = Bot(token=TOKEN)
     logger.info("Бот создан")
     dp = Dispatcher()
     logger.info("Диспетчер создан")
 
-    #@dp.message(Command('start'))
-    #async def send_welcome(message: types.Message):
-        #await message.answer("Здравствуйте! Какой тип подработки вас интересует? Я могу помочь найти вакансии в вашей области!")
-        #logger.info("Бот ответил на команду /start")
+    async def send_random_joke():
+        while True:
+            try:
+                response = requests.get('https://www.anekdot.ru/random/anekdot/')
+                if response.status_code == 200:
+                    soup = BeautifulSoup(response.text, 'html.parser')
+                    jokes = soup.find_all('div', class_='text')
 
-    @dp.message(Command(""))
-    async def help(message: types.Message):
-        await message.answer("")
-        await message.answer("")
-        logger.info("Бот объяснил, что делает")
+                    random_joke = choice(jokes).text.strip()
+                    anekdot = random_joke
+                else:
+                    anekdot = "Не удалось получить анекдот"
+
+                await bot.send_message(CHANNEL_ID, f"Анекдот: {anekdot}")
+                logger.info(f"Опублекован анекдот: {anekdot}")
+            except Exception as e:
+                logger.error(f"Ошибка при отправке сообщения {e}")
+
+            await asyncio.sleep(30)
 
     @dp.message(Command("start"))
-    async def cmd_start(message: types.Message):
-        kb = [
-            [types.KeyboardButton(text="Что ты умеешь?")],
-            [types.KeyboardButton(text="Найти подработку")]
-        ]
-        keyboard = types.ReplyKeyboardMarkup(keyboard=kb)
-        await message.answer("Здравствуйте! Какой тип подработки вас\
-                              интересует? Я могу помочь найти вакансии в вашей\
-                             области!", reply_markup=keyboard)
+    async def send_welcome(message: types.Message):
+        await message.answer("Бот запущен! Он будет отправлять анекдоты!")
+        logger.info("Бот запущен")
 
-    @dp.message()
-    async def echo(message: types.Message):
-        await message.answer(message.text)
-        logger.info(f"Бот вернул пользователю сообщение {message.text}")
+    task = asyncio.create_task(send_random_joke())
 
-    await dp.start_polling(bot)
+    try:
+        await dp.start_polling(bot)
+    finally:
+        task.cancel()
+        await bot.session.close()
+        logger.info("Бот остановлен")
 
 if __name__ == '__main__':
     asyncio.run(main())
